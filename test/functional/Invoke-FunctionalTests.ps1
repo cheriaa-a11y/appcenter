@@ -35,7 +35,11 @@ Import-Module Pester
 
 $workingDir = Get-ScriptDirectory
 
-$env:PATH = "$(Get-ScriptDirectory)/bin:" + $env:PATH
+if($IsWindows) {
+  Write-Warning "Will use global 'appcenter' command. Run 'npm link' to use repository build."
+} else {
+  $env:PATH = "$(Get-ScriptDirectory)/bin:" + $env:PATH
+}
 $env:CLI_ROOT = Get-Root
 
 Write-Host "Signing in to App Center"
