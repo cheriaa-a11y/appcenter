@@ -114,7 +114,7 @@
     "jsonwebtoken": "8.5.1",
     "jszip": "3.2.2",
     "lodash": "4.17.15",
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "mkdirp": "1.0.3",
     "ms-rest": "2.5.3",
     "omelette": "0.4.12",
